@@ -5,18 +5,7 @@
   <h1>Today</h1>
   <% d=DateTime.now%>
   <% year=d.year%>
-  <% month="January" if d.month=1%>
-  <% elsif month="February" d.month=2%>
-  <% elsif  month="March" d.month=3%>
-  <% elsif month="April" d.month=4%>
-  <% elsif month="May" d.month=5%>
-  <% elsif month="June" d.month=6%>
-  <% elsif month="July" d.month=7%>
-  <% elsif month="August" d.month=8%>
-  <% elsif month="September" d.month=9%>
-  <% elsif month="October" d.month=10%>
-  <% elsif month="November" d.month=11%>
-  <% elsif month="December" d.month=12%>
+  <% month=(d + 1.month).strftime("%B")
   <p>The date is <%=month%></p>
 
 
