@@ -6,17 +6,17 @@
   <% d=DateTime.now%>
   <% year=d.year%>
   <% month="January" if d.month=1%>
-  <% month="February" if d.month=2%>
-  <% month="March" if d.month=3%>
-  <% month="April" if d.month=4%>
-  <% month="May" if d.month=5%>
-  <% month="June" if d.month=6%>
-  <% month="July" if d.month=7%>
-  <% month="August" if d.month=8%>
-  <% month="September" if d.month=9%>
-  <% month="October" if d.month=10%>
-  <% month="November" if d.month=11%>
-  <% month="December" if d.month=12%>
+  <% elsif month="February" d.month=2%>
+  <% elsif  month="March" d.month=3%>
+  <% elsif month="April" d.month=4%>
+  <% elsif month="May" d.month=5%>
+  <% elsif month="June" d.month=6%>
+  <% elsif month="July" d.month=7%>
+  <% elsif month="August" d.month=8%>
+  <% elsif month="September" d.month=9%>
+  <% elsif month="October" d.month=10%>
+  <% elsif month="November" d.month=11%>
+  <% elsif month="December" d.month=12%>
   <p>The date is <%=month%></p>
 
 
